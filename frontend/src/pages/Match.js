@@ -43,7 +43,7 @@ export default function Match() {
         }
 
         return (
-            <Container>
+            <Container style={{marginTop: "10%"}}>
             {
                 !pfp ? (
                 <Spinner animation="border" role="status" style={{marginLeft: "50%"}}>
@@ -91,7 +91,7 @@ export default function Match() {
                 </Container>
                </Row>
                <Row style={{maxWidth: "20%", margin: "2%", marginTop: "3%", padding: "1%"}}>
-                    <Button variant="primary" size="sm">Say Hello 👋</Button>{' '}
+                    <Button variant="primary" size="sm" href="/dashboard">Say Hello 👋</Button>{' '}
                </Row>
             </Row>
 
