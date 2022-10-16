@@ -5,6 +5,8 @@ import "./index.css";
 import App from "./components/app/App";
 import ProfilePage from './components/profile/ProfilePage';
 import RecruiterForm from './pages/CreateProfilePage';
+import WebinarVideos from "./pages/WebinarVideos"
+import Dashboard from "./pages/Dashboard"
 import MyNavbar from './components/Navbar'
 import { useNavigate } from "react-router-dom";
 import Login from "./pages/LoginPage"
@@ -23,7 +25,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <MyNavbar /> */}
+      <MyNavbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/form" element={<RecruiterForm />} />
@@ -32,6 +34,10 @@ root.render(
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/match" element={<Match />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/WebinarVideos" element={<WebinarVideos />} />
+
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
