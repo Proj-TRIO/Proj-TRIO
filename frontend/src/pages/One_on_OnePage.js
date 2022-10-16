@@ -3,7 +3,7 @@ import { Col, Row, Container, Button, Card, CardGroup } from 'react-bootstrap';
 import React, { useEffect } from 'react'
 import VideosController from '../controller/Videos'
 
-export default function WebinarVideos() {
+export default function OneonOne() {
     var [all_Videos, set_all_Videos] = React.useState([]);
     const videoRef = React.useRef();
 
@@ -11,16 +11,15 @@ export default function WebinarVideos() {
 
         VideosController.getJobSeeker().then((res) => {
             console.log(res)
-            set_all_Videos(res.videos)
+            set_all_Videos(res.videos.slice(0, 4))
 
         });
     }
-    console.log(all_Videos)
     return (
         <Container style={{ backgroundColor: 'white', minHeight: "100%", minWidth: "100%" }}>
             <Container style={{ padding: "10%" }}>
                 <Row style={{ paddingLeft: "30%", }}>
-                    <h1>Webinar Videos</h1>
+                    <h1>One on One Sessions</h1>
                 </Row>
                 <Row style={{}}>
                     <Container style={{

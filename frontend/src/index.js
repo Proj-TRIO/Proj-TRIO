@@ -11,6 +11,7 @@ import MyNavbar from './components/Navbar'
 import { useNavigate } from "react-router-dom";
 import Login from "./pages/LoginPage"
 import Signup from "./pages/SignupPage"
+import OneonOne from "./pages/One_on_OnePage"
 
 import Auth from "./components/app/Auth"
 import Landing from "./pages/Landing";
@@ -35,7 +36,8 @@ root.render(
         <Route path="/auth" element={<Auth />} />
         <Route path="/match" element={<Match />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard/WebinarVideos" element={<WebinarVideos />} />
+        <Route path="/dashboard/webinarvideos" element={<WebinarVideos />} />
+        <Route path="/dashboard/1-1" element={<OneonOne />} />
 
 
       </Routes>
