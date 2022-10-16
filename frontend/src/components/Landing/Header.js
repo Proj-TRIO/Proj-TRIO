@@ -21,17 +21,17 @@ function Header() {
   return (
     <Container className="header" id="header" style={mainStyle}>
       <Row>
-        <Col style={{ marginTop: "60px" }} >
+        <Col style={{ marginTop: "100px" }} >
           <Row className="text-heading1 margin-bot-30">
-            <h1><b>Unlock Opportunity Through Meaningful Connections</b></h1>
+            <h1><b>Corporate Mentors</b></h1>
           </Row>
-          <Row className="home-banner-small-text">
-            10KC is a talent experience platform for inclusive mentoring, employee connectivity and skills development designed for the new world of work.
+          <Row className="home-banner-small-text" style={{marginLeft: -1}}>
+          Empowering BIPOC communities and immigrants by connecting them to mentors in the corporate world to increase opportunities.
           </Row>
           <Container className="div-block-17">
             <Row>
               <Col>  <Button className="ttc-button">
-                WHY TRIO
+                WHY US
          </Button></Col>
               <Col>
                 <Button className="ttc-buttonbigoutline--blue ">

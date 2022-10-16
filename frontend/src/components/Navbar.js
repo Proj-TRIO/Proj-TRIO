@@ -29,47 +29,10 @@ export default function MyNavbar() {
             style={{ maxHeight: '100px', marginLeft: "50px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">WHY TRIO</Nav.Link>
+            <Nav.Link href="/">WHY US</Nav.Link>
             <NavDropdown title="SOLUTONS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">
-                All Talent Experience Solution
-                </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="#mentorship">
                 Mentorship program
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Connectivity program
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="PRODUCTS" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">PRODUCT</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="RESOURCES" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">PRODUCT</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="COMPANY" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">PRODUCT</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="PRICING" id="navbarScrollingDropdown">
@@ -82,6 +45,7 @@ export default function MyNavbar() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="#contact">CONTACT US</Nav.Link>
 
           </Nav>
           <Button color="inherit" variant="outlined" onClick={handleLogin} sx={{ mr: 1 }}>

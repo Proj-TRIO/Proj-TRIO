@@ -6,11 +6,12 @@ import { productAboutData } from "./productAboutData";
 import useWindowPosition from "../../hooks/useWindowPosition";
 import Typography from "@mui/material/Typography";
 import { breakpoints } from "@mui/system";
+import {Card, Button, Col, Row} from 'react-bootstrap';
 
 function About() {
   const mainStyle = {
     minHeight: "100vh",
-    backgroundColor: "whitesmoke",
+    backgroundColor: "turquoise",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -42,18 +43,51 @@ function About() {
         >
           What We Provide
         </Typography>
-        <ImageCard
-          img={jobSeeker}
-          data={productAboutData[0]}
-          margin={2}
-          checked={checked}
-        />
-        <ImageCard
-          img={recruiter}
-          data={productAboutData[1]}
-          margin={2}
-          checked={checked}
-        />
+        <Row>
+        <Col><Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title style={{fontSize: 16, fontWeight: "bold"}}>Mentorship</Card.Title>
+        <Card.Text>
+        Enable employees to reach their career goals through effective mentor-mentee relationships.
+        </Card.Text>
+        <Button variant="outline-primary">View Solution</Button>
+      </Card.Body>
+    </Card></Col>
+        
+        <Col><Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title style={{fontSize: 16, fontWeight: "bold"}}>Connectivity</Card.Title>
+        <Card.Text>
+        Build a culture and a sense of belonging by fostering connections among employees.
+        </Card.Text>
+        <Button variant="outline-primary">View Solution</Button>
+      </Card.Body>
+    </Card></Col>
+    </Row>
+
+    <Row>
+
+      <Col><Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title style={{fontSize: 16, fontWeight: "bold"}}>Diversity, Equity & Inclusion</Card.Title>
+        <Card.Text>
+        Advance the development and careers of diverse employees and allies.
+        </Card.Text>
+        <Button variant="outline-primary">View Solution</Button>
+      </Card.Body>
+    </Card></Col>
+
+    <Col><Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title style={{fontSize: 16, fontWeight: "bold"}}>Leadership Development</Card.Title>
+        <Card.Text>
+        Develop and grow high-potential talent and people managers to lead in the new world of work.
+        </Card.Text>
+        <Button variant="outline-primary">View Solution</Button>
+      </Card.Body>
+    </Card></Col>
+    </Row>
+
       </div>
     </div>
   );

@@ -4,7 +4,6 @@ import React from "react";
 function ContactUs() {
   const mainStyle = {
     minHeight: "100vh",
-    backgroundColor: "#A9ADDD",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -17,21 +16,20 @@ function ContactUs() {
           padding: "2rem",
           display: "flex",
           flexDirection: "column",
+          boxShadow: "3px 3px 3px 3px #e5f2f0"
         }}
       >
-        <Typography variant="h3" gutterBottom>
-          Contact Us
+        <Typography variant="h5" gutterBottom>
+          CONTACT US
         </Typography>
         <TextField
           sx={{ mb: 3 }}
-          label="Name"
-          variant="filled"
+          label="Name"        
           required
         ></TextField>
         <TextField
           sx={{ mb: 3 }}
           label="Email"
-          variant="filled"
           required
         ></TextField>
         <TextField

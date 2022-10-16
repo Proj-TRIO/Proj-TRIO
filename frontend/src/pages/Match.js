@@ -3,7 +3,7 @@ import JobSeekerController from "../controller/JobSeekerController";
 import RecruiterController from "../controller/RecruiterController";
 import UserController from "../controller/UserController";
 import { useNavigate, UseNavigate } from 'react-router-dom';
-import { Container, Col, Row, Form, Image, Button } from "react-bootstrap";
+import { Container, Col, Row, Form, Image, Button, Spinner } from "react-bootstrap";
 import {
     Avatar,
 } from "@mui/material";
@@ -43,7 +43,14 @@ export default function Match() {
         }
 
         return (
-            <Container style={{maxWidth:"45%", marginTop:"5%", border: "1px solid rgba(0, 0, 0, 0.05)", boxShadow: "5px 5px 1px #9E9E9E"}}>
+            <Container>
+            {
+                !pfp ? (
+                <Spinner animation="border" role="status" style={{marginLeft: "50%"}}>
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+                ) : (
+                    <Container style={{maxWidth:"45%", marginTop:"5%", border: "1px solid rgba(0, 0, 0, 0.05)", boxShadow: "5px 5px 1px #9E9E9E"}}>
             <Row style={{backgroundColor: '#e5f2f0'}}> 
                <Row style={{fontSize: 20, fontWeight: "bold", fontFamily: "sans-serif", paddingLeft: "5%", paddingTop: "3%"}}>
                {mentee}, meet {mentor}!
@@ -116,6 +123,8 @@ export default function Match() {
                 </Row>
             </Row>
             </Container>
-
+                ) 
+            }
+            </Container>
         )
     }
