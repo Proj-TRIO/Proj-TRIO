@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8369cf7.css",
+    "main.js": "/static/js/main.ae4d12d7.js",
+    "static/media/recruiter.jpg": "/static/media/recruiter.6cf5722a81146d51c2cd.jpg",
+    "static/media/jobSeeker.jpg": "/static/media/jobSeeker.6ff5516a68179e8ccf04.jpg",
+    "static/media/headerlogo.jpg": "/static/media/headerlogo.5b5f07bf7c8d55a3402d.jpg",
+    "static/media/corporatenetwork.jpeg": "/static/media/corporatenetwork.667b5a48336c4153efd8.jpeg",
+    "static/media/resumereview.jpeg": "/static/media/resumereview.567027ed4ba90d936f24.jpeg",
+    "static/media/corporate4.jpeg": "/static/media/corporate4.090f4325f09be5acf460.jpeg",
+    "static/media/mentorfiles.jpeg": "/static/media/mentorfiles.c861646a259053a75bf9.jpeg",
+    "static/media/corporate2.jpeg": "/static/media/corporate2.f41a7b020e497097d7ee.jpeg",
+    "static/media/mentorship.jpeg": "/static/media/mentorship.55f465c07b0136ffb31e.jpeg",
+    "static/media/1-1.jpg": "/static/media/1-1.f00a3e20344a374135ee.jpg",
+    "static/media/profile-pic-example.png": "/static/media/profile-pic-example.5faf09a7795d28bf5a2b.png",
+    "static/media/JobSeekerFormImageUpload.png": "/static/media/JobSeekerFormImageUpload.539a010a6662efc34e97.png",
+    "static/media/triologo.jpg": "/static/media/triologo.c9e22d5ae97e7748ef5b.jpg",
+    "index.html": "/index.html",
+    "main.d8369cf7.css.map": "/static/css/main.d8369cf7.css.map",
+    "main.ae4d12d7.js.map": "/static/js/main.ae4d12d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8369cf7.css",
+    "static/js/main.ae4d12d7.js"
+  ]
+}
