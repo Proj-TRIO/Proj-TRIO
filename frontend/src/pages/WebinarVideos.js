@@ -28,28 +28,24 @@ export default function WebinarVideos() {
                     }}>
                         <Row style={{ marginBottom: "5%", }}>
                             {all_Videos.map((a, idx) => (
-                                <Row style={{ padding: "3%", paddingTop: "0%", paddingBottom: "0%", borderBottom: "2px solid black" }}>
+                                <Container>
+                                {
+                                    idx != 5 ? (
+                                        <Row style={{ padding: "3%", paddingTop: "0%", paddingBottom: "0%", borderBottom: "2px solid black" }}>
                                     <Col style={{
                                         marginTop: "1%",
                                         marginLeft: "5px",
                                         maxWidth: "35%"
                                     }}>
-                                        {
-                                            idx == 5 ?
-                                                <video ref={videoRef} width="400" height="400" controls>
-                                                    <source src={a.sources[0].src} />
-                                                </video>
-                                                :
-                                                <video ref={videoRef} width="320" height="250" controls>
-                                                    <source src={a.sources[1].src} />
-                                                </video>
-                                        }
+                                    <video ref={videoRef} width="320" height="250" controls>
+                                        <source src={a.sources[1].src} />
+                                    </video>
                                     </Col>
                                     <Col style={{
                                         marginTop: "7%",
                                         marginLeft: "5px",
                                     }}>
-                                        <Card style={{ width: '500px', height: '240px', paddingTop: "10px", paddingLeft: "10px", paddingRight: "10px", border: "0px" }}>
+                                            <Card style={{ width: '500px', height: '240px', paddingTop: "10px", paddingLeft: "10px", paddingRight: "10px", border: "0px" }}>
                                             <Card.Body>
                                                 <Card.Text>
                                                     {a.long_description == null ?
@@ -69,8 +65,10 @@ export default function WebinarVideos() {
                                         </Card>
                                     </Col>
                                 </Row>
-
-
+                                    ): null
+                                }
+                                </Container>
+                                
                             ))}
 
                         </Row >

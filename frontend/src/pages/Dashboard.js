@@ -55,7 +55,7 @@ export default function Dashboard() {
         }
     return (
         <Container style={{marginTop: "6.5%", minWidth: "100%", minHeight: "100%"}}>
-            <Row style={{backgroundColor: 'white'}}> 
+            <Row style={{backgroundColor: 'white', paddingBottom: "5%"}}> 
                <Row style={{fontSize: 20, fontWeight: "bold", fontFamily: "sans-serif", paddingLeft: "5%", paddingTop: "3%"}}>
                <h3 style={{color: 'black', fontWeight: "bold"}}>Welcome {mentee}, meet your mentor {mentor}!</h3>
                </Row>
@@ -100,7 +100,7 @@ export default function Dashboard() {
                </Row>
             </Row>
             <Row>
-                <Container style={{backgroundColor: "turquoise", minWidth: "100%", }}>
+                <Container style={{backgroundColor: "turquoise", minWidth: "100%", paddingBottom: "5%"}}>
                     <Row>
                         <Col>
                             <h3 style={{color: "grey", fontWeight: "bold", padding: "5%", paddingBottom: 0}}>One one One</h3>
@@ -114,6 +114,7 @@ export default function Dashboard() {
                             <Container style={{color: "grey", padding: "5%", paddingBottom: 0, paddingTop: 0}}>
                                 Find all the global webinar conducted by the mentor in this tab
                             </Container>
+                            <br />
                             <br />
                             <br />
                             <Button style={{marginLeft: "5%", marginBottom: "10%"}} href="/dashboard/webinarvideos" variant="outline-primary">Attend Webinar</Button>
