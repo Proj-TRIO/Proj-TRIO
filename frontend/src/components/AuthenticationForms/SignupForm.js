@@ -76,8 +76,8 @@ export default function SignupForm() {
                         // Make the buttons side by side
                         sx={{display: "flex", flexDirection: "row"}}
                     >
-                        <FormControlLabel value="jobseeker" onClick={() => setRecruiter(false)} control={<Radio />} label="Job Seeker" />
-                        <FormControlLabel value="recruiter" onClick={() => setRecruiter(true)} control={<Radio />} label="Recruiter" />
+                        <FormControlLabel value="jobseeker" onClick={() => setRecruiter(false)} control={<Radio />} label="Mentee" />
+                        <FormControlLabel value="recruiter" onClick={() => setRecruiter(true)} control={<Radio />} label="Mentor" />
                     </RadioGroup>
                 </FormControl>
 
