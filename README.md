@@ -1,6 +1,6 @@
-# *Trio*
+# *Corporate Mentor*
 
-*Trio* is an application focused on accelerating the job search and talent acquisition process. We accomplish this by providing recruiters and job seekers the ability to complete the entire hiring process without the need for any third-party platforms to fill out forms or to conduct interviews.
+*Corporate Mentor* is an application focused on accelerating the job search and talent acquisition process. We accomplish this by providing recruiters and job seekers the ability to complete the entire hiring process without the need for any third-party platforms to fill out forms or to conduct interviews.
 
 ## Installation
 1. Install [Node](https://nodejs.org/en/download/current/)
