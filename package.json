@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "navbar": "^2.1.0",
+    "nodemon": "^2.0.20",
+    "react-bootstrap": "^2.5.0",
+    "react-button": "^1.2.1"
+  }
+}
