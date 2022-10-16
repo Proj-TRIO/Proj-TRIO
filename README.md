@@ -8,9 +8,10 @@
 ```
 sh firstinstall.sh
 ```
-3. To start the web app run.
+3. To start the web app.
 ```
-sh ruanpp.sh
+cd frontend and run npm start
+cd backend and run nodemon index.js
 ```
 4. The sh script takes care of the installation and activation
 5. The default port  for accessing the frontend by which the app can be accessed is http://localhost:3000
