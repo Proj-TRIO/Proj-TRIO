@@ -51,6 +51,7 @@ const register = async (req, res, next) => {
 }
 
 const current_user = async (req, res, next) => {
+    console.log(req)
     if (req.isAuthenticated()) {
         output = {}
         output["_id"] = req.user._id
@@ -58,7 +59,7 @@ const current_user = async (req, res, next) => {
         output["recruiter"] = req.user.recruiter
         res.status(200).send(output)
     } else {
-        res.status(401).send("login first")
+        res.status(401).send(req.body)
     }
 }
 
