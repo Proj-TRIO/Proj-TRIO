@@ -39,14 +39,12 @@ app.use(urlencoded({ extended: true })); // for parsing application/x-www-form-u
 const port = process.env.PORT || 4000;
 
 app.use(
-    cors()
+    cors({
+        origin: "https://test-8ypz.onrender.com",
+    })
 );
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    next();
-  });
-  
+
 app.use("/auth", AuthRoutes);
 app.use("/recruiter", RecruiterRoutes);
 app.use("/jobseeker", JobSeekerRoutes);
