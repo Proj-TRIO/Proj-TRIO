@@ -18,14 +18,14 @@ app.use(express.urlencoded({ extended: false }))
 app.use(session({
     secret: 'Trio',
     cookie: {
-        maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
-        httpOnly: false,
-        sameSite: "none",
+        sameSite: 'none', //add
+        secure: true,  //add
+        maxAge: 30000
     },
+    proxy: true,
     store: store,
     resave: true,
-    saveUninitialized: true,
-    cookie: { secure: false }
+    saveUninitialized: true
 }));
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Credentials", true)
