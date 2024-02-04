@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:4000";
+const baseUrl = "https://test-8ypz.onrender.com";
 
 const Get = async (path) => {
     try {
