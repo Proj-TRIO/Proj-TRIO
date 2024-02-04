@@ -38,7 +38,7 @@ passport.use(new LocalStrategy(
 
 var MongoDBStore = require('connect-mongodb-session')(session);
 
-const uri = `mongodb+srv://Lordpritish:${process.env.MONGO_PASS}@triocluster.3zv2smu.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://rishikoul2:${process.env.MONGO_PASS}@cluster0.ucdoojg.mongodb.net/?retryWrites=true&w=majority`
 
 
 var store = new MongoDBStore({
