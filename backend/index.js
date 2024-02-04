@@ -40,7 +40,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
     cors({
-        origin: "https://test-8ypz.onrender.com",
+        origin: "https://test-8ypz.onrender.com/*",
     })
 );
 
