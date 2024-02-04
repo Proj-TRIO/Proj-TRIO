@@ -18,7 +18,9 @@ app.use(express.urlencoded({ extended: false }))
 app.use(session({
     secret: 'Trio',
     cookie: {
-        maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
+        maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+        httpOnly: false,
+        sameSite: "none",
     },
     store: store,
     resave: true,
