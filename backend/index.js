@@ -42,7 +42,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://proj-trio.vercel.app",
     })
 );
 
