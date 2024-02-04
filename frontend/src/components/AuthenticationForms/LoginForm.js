@@ -11,45 +11,38 @@ export default function LoginForm() {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
     const [error, setError] = useState(false)
-    const testMe = async (e) => {
-        UserController.getCurrent().then((res) => {
-            console.log("bruhhh what")
-
-        });
-    }
     const handleLogin = async (e) => {
         e.preventDefault();
         // Send email and password to backend using post request
-        var res = await UserController.login({ username: email, password: password })
-        console.log(res)
-
-        if (res.status == 200) {
-            // UserController.getCurrent().then((res) => {
-            //     if (res.recruiter) {
-            //         RecruiterController.getRecruiter().then((res) => {
-            //             console.log(res)
-            //             if (res.length == 0) {
-            //                 navigate('/form')
-            //             } else {
-            //                 navigate('/profile')
-            //             }
-            //         });
-            //     }
-            //     else {
-            //         JobSeekerController.getJobSeeker().then((res) => {
-            //             console.log(res)
-            //             if (res.length == 0) {
-            //                 navigate('/form')
-            //             } else {
-            //                 navigate('/profile')
-            //             }
-            //         });
-            //     }
-
-            // });
-        } else {
-            setError(true);
-        }
+        UserController.login({ username: email, password: password }).then((res) => {
+            if (res.status == 200) {
+                UserController.getCurrent().then((res) => {
+                    if (res.recruiter) {
+                        RecruiterController.getRecruiter().then((res) => {
+                            console.log(res)
+                            if (res.length == 0) {
+                                navigate('/form')
+                            } else {
+                                navigate('/profile')
+                            }
+                        });
+                    }
+                    else {
+                        JobSeekerController.getJobSeeker().then((res) => {
+                            console.log(res)
+                            if (res.length == 0) {
+                                navigate('/form')
+                            } else {
+                                navigate('/profile')
+                            }
+                        });
+                    }
+    
+                });
+            } else {
+                setError(true);
+            }
+        })
 
     };
     const handleSignup = (e) => {
@@ -94,16 +87,6 @@ export default function LoginForm() {
                     fullWidth
                 >
                     Log In
-                </Button>
-                <Button
-                    type='submit'
-                    sx={{ backgroundColor: "#91a4e8", textTransform: 'none', color: "#FFFFFF" }}
-                    color='primary'
-                    variant='contained'
-                    onClick={testMe}
-                    fullWidth
-                >
-                    Test
                 </Button>
                 {error ?
                     <Alert sx={{ width: 250 }} severity="error">Login failed</Alert>
