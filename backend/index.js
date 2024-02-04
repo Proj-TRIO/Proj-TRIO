@@ -39,9 +39,7 @@ app.use(urlencoded({ extended: true })); // for parsing application/x-www-form-u
 const port = process.env.PORT || 4000;
 
 app.use(
-    cors({
-        origin: "http://localhost:3000",
-    })
+    cors()
 );
 
 
